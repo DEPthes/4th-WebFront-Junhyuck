@@ -1,5 +1,5 @@
 import { calculateInvestmentResults, formatter } from "../util/investment";
-
+import "./Results.css"
 
 export default function Results( { input } ) {
     const resultsData = calculateInvestmentResults(input);

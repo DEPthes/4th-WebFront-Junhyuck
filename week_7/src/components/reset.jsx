@@ -1,5 +1,7 @@
+import "./Reset.css"
+
 export default function Reset({onReset}) {
     return (
-        <button className = "reset_btn"onClick = {onReset}>reset</button>
+        <button className = "reset_btn" onClick = {onReset}>reset</button>
     )
 }

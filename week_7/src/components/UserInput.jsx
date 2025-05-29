@@ -1,4 +1,4 @@
-import {useState} from "react";
+import "./UserInput.css"
 
 export default function UserInput( { onChange, userInput } ) {
     return <section id="user-input"> 

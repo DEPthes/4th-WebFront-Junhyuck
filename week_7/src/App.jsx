@@ -3,6 +3,7 @@ import Results from './components/Results.jsx';
 import UserInput from './components/UserInput.jsx'
 import Reset from './components/reset.jsx'
 import Summary from './components/Summary.jsx'
+import CompleteYear from './components/CompleteYear.jsx';
 import { useState } from "react";
 
 function App() {
@@ -34,14 +35,14 @@ function App() {
     }
 
     const currentYear = new Date().getFullYear();
-    const finishYear = currentYear + userInput.duration;
+
 
   return (
     <>
     <Header />
     <UserInput userInput = {userInput} onChange = {handleChange} />
     <Summary input = {userInput}/>
-    <p className="center">투자 완료 예상 연도: <strong>{finishYear}년</strong></p>
+    <CompleteYear startYear={currentYear} duration={userInput.duration}/>
     {!inputIsValid && <p className = "center">Please enter a duration greater than zero</p>}
     {inputIsValid &&<Results input = {userInput}/>}
     <Reset onReset = {resetHandler}/>
