@@ -1,0 +1,39 @@
+.game {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgb(145, 145, 206);
+}
+
+.game-board {
+    padding: 30px;
+}
+
+.toggle-btn {
+    padding: 12px;
+    font-size: 18px;
+    background-color: rgb(125, 147, 209);
+    border-radius: 8px;
+}
+
+.toggle-btn:hover {
+    background-color: yellow;
+}
+
+.game-info ol {
+    padding: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.game-info li button {
+    padding: 10px;
+    background-color: #c9cbee;
+    border: none;
+}
