@@ -1,6 +1,13 @@
 import { useState } from 'react';
-import Square from "./Components/Square.jsx"
 import "./myStyle.css"
+
+function Square({ value, onSquareClick, highlight}) {
+  return (
+    <button className="square" onClick={onSquareClick} style={{backgroundColor: highlight ? "skyblue" : "white"}}>
+      {value}
+    </button>
+  );
+}
 
 function Board({ xIsNext, squares, onPlay }) {
   const result = calculateWinner(squares);
